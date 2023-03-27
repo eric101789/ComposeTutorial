@@ -1,4 +1,4 @@
-package com.example.compose.tutorial
+package com.example.composetutorial
 
 import com.example.composetutorial.Message
 

@@ -1,7 +1,6 @@
 package com.example.composetutorial
 
 import android.content.res.Configuration
-import android.media.Image
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -24,7 +23,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.composetutorial.ui.theme.ComposeTutorialTheme
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.compose.tutorial.SampleData
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
