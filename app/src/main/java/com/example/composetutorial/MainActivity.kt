@@ -22,7 +22,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MessageCard(Message("Android", "Jetpack Compose"))
+//            MessageCard(Message("Android", "Jetpack Compose"))
+            ComposeTutorialTheme {
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    MessageCard(Message("Android", "Jetpack Compose"))
+                }
+            }
         }
     }
 }
@@ -60,7 +65,14 @@ fun MessageCard(msg: Message) {
 @Preview
 @Composable
 fun PreviewMessageCard() {
-    MessageCard(
-        msg = Message("Colleague", "Hey, take a look at Jetpack Compose, it's great!")
-        )
+//    MessageCard(
+//        msg = Message("Colleague", "Hey, take a look at Jetpack Compose, it's great!")
+//        )
+    ComposeTutorialTheme {
+        Surface {
+            MessageCard(
+                msg = Message("Colleague", "Take a look at Jetpack Compose, it's great!")
+            )
+        }
+    }
 }
