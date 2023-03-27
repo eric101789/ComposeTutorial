@@ -22,13 +22,19 @@ class MainActivity : ComponentActivity() {
 //                    Greeting("Android")
 //                }
 //            }
-            Text("Hello World!")
+//            Text("Hello World!")
+            MessageCard(name = "Android")
         }
     }
 }
 
 @Composable
 fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}
+
+@Composable
+fun MessageCard(name: String) {
     Text(text = "Hello $name!")
 }
 
